@@ -13,9 +13,9 @@ compiler:
   - clang
 before_install:
   - if [[ "$TRAVIS_CPU_ARCH" == "ppc64le" ]]; then  
+      sudo apt-get install gcc-4.6 build-essential;
       sudo apt-get install -y ragel;
       sudo apt install nginx;
-      sudo apt-get install gcc-4.6 build-essential;
     fi
 addons:
   apt:
