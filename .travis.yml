@@ -11,7 +11,11 @@ language: c
 compiler:
   - gcc
   - clang
-
+before_install:
+  - if [[ "$TRAVIS_CPU_ARCH" == "ppc64le" ]]; then  
+      sudo apt-get install -y ragel;
+      sudo apt install nginx;
+    fi
 addons:
   apt:
     packages: [ axel, cpanminus, libtest-base-perl, libtext-diff-perl, liburi-perl, libwww-perl, libtest-longstring-perl, liblist-moreutils-perl ]
