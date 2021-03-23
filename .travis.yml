@@ -1,7 +1,20 @@
+# ----------------------------------------------------------------------------
+#
+# Package             : memc-nginx-module
+# Source Repo         : https://github.com/openresty/memc-nginx-module
+# Travis Job Link     : https://travis-ci.com/github/asellappen/memc-nginx-module/
+# Created travis.yml  : Yes
+# Maintainer          : Arumugam N S <asellappen@yahoo.com> / Priya Seth<sethp@us.ibm.com>
+#
+# Script License      : Apache License, Version 2 or later
+#
+# ----------------------------------------------------------------------------
+
+
 sudo: required
-dist: bionic
+dist: focal
 arch:
-  #  - amd64
+    - amd64
     - ppc64le
     
 os: linux
